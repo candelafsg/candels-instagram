@@ -1,0 +1,24 @@
+
+
+
+:root{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    --background: #F6F5F0;
+    --text: #333333;
+}
+
+@font-face {
+    font-family: Yaldevi;
+    src: url('./fonts/Yaldevi-Regular.ttf');
+}
+
+
+body{
+    font-family: Yaldevi;
+    background-color: var(--background);
+    color: var(--text);
+    font-size: 16px;
+}
