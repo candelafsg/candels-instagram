@@ -7,7 +7,6 @@ export const BtnState = ({children, variant, href, target, rel, type, disabled, 
 
   const commonProps = {
     ...props,
-    disabled,
     className: `button btn-${variant}`
   };
 
@@ -28,6 +27,7 @@ export const BtnState = ({children, variant, href, target, rel, type, disabled, 
       name={name}
       value={value}
       autoFocus={autoFocus}
+      disabled={disabled || variant === 'disabled'}  // Deshabilitar si es disabled
       {...commonProps}
     >
       {children}

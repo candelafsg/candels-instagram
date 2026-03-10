@@ -1,5 +1,9 @@
 
 
+* {
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23FF7D85" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4.1 12 6"/><path d="m5.1 8-2.9-.8"/><path d="m6 12-1.9 2"/><path d="M7.2 2.2 8 5.1"/><path d="M9.037 9.69a.498.498 0 0 1 .653-.653l11 4.5a.5.5 0 0 1-.074.949l-4.349 1.041a1 1 0 0 0-.74.739l-1.04 4.35a.5.5 0 0 1-.95.074z"/></svg>'), pointer;
+}
+
 .button{
     font-family: Yaldevi;
     padding: 1rem;
@@ -7,7 +11,7 @@
     border-radius: 50px;
     color: var(--text);
     background: var(--background);
-    cursor: pointer;
+   
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
@@ -39,6 +43,18 @@
     100% {
         transform: rotateX(0deg);
         opacity: 1;
+    }
+}
+
+@keyframes scaleText {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
     }
 }
 
@@ -86,6 +102,18 @@
 .button:disabled, .button.btn-disabled{
     opacity: 0.5;
     cursor: not-allowed;
+    pointer-events: none;
+}
+
+.button:disabled:hover, .button.btn-disabled:hover,
+.button:disabled:active, .button.btn-disabled:active {
+    transform: none;
+    color: #888;
+}
+
+.button:disabled:hover::before, .button.btn-disabled:hover::before,
+.button:disabled:active::before, .button.btn-disabled:active::before {
+    display: none;
 }
 
 .button:disabled::before, .button.btn-disabled::before {
@@ -93,7 +121,20 @@
 }
 
 .button:disabled span, .button.btn-disabled span {
-    animation: none !important;
+    animation: none ;
+    color: #888;
+}
+
+.button.btn-disabled {
+    background: #e0e0e0;
+    color: #888;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.button.btn-disabled:hover {
+    background: #d0d0d0;
+    color: #888;
 }
 
 
