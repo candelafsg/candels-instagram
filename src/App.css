@@ -1,5 +1,9 @@
 
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 :root{
     margin: 0;
@@ -8,6 +12,7 @@
 
     --background: #F6F5F0;
     --text: #333333;
+    --size-title: 10vw;
 }
 
 @font-face {
@@ -21,4 +26,12 @@ body{
     background-color: var(--background);
     color: var(--text);
     font-size: 16px;
+}
+
+
+.canvas{
+    width: 1080px;
+    height: 1080px;
+    border: 1px solid black;
+    position: relative;
 }

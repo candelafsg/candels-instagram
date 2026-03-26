@@ -1,0 +1,63 @@
+
+.post-container {
+    position: relative;
+    margin: 0.5rem;
+    width: 1080px;
+    height: 1080px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+}
+
+
+.line {
+    position: absolute;
+    background-color: var(--text);
+}
+
+/* horizontales */
+.top, .bottom {
+    width: 1005px;
+    height: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.top {
+    top: 0;
+}
+
+.bottom {
+    bottom: 0;
+}
+
+/* verticales */
+.left, .right {
+    height: 1005px;
+    width: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+
+
+.title{
+   font-size: 150px;
+   line-height: 1;
+}
+
+.subtitle{
+    font-size: 30px;
+    font-style: oblique;
+    opacity: 0.8;
+    
+}

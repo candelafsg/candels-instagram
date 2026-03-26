@@ -1,15 +1,13 @@
-import { useState } from 'react'
 
 import './App.css'
-import ButtonStatePage from './pages/btns/buttonstate/ButtonStatePage'
+import { Post } from './pages/posts/Post'
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
     <>
-   
-    <ButtonStatePage />
+      <Post />
     </>
   )
 }
