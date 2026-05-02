@@ -1,0 +1,114 @@
+.btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: 'Bitcount';
+  padding: 4px; /* espacio para el borde exterior */
+  border-radius: 20px;
+  border: 2px solid var(--text);
+}
+
+/* INTERIOR */
+.btn-interior {
+  padding: 1rem ;
+  border-radius: 18px;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 🔥 PRIMARY */
+.btn-primary {
+  border: 3px solid #E99079;
+}
+
+.btn-interior.btn-primary {
+  background-color: var(--text); /* oscuro */
+  color: #E99079;
+  border: none;
+}
+
+.btn-interior.btn-primary:hover {
+  background-color: #E99079; /* naranja salmon */
+  color: var(--text); /* texto oscuro */
+}
+
+.btn-primary:hover {
+  border-color: var(--text); /* borde oscuro */
+}
+
+
+
+
+/* 🔥 SECONDARY */
+.btn-secondary {
+  border: 3px solid var(--text);
+}
+
+
+.btn-interior.btn-secondary {
+  background-color: transparent; /* oscuro */
+  color: var(--text);
+  border: none;
+}
+
+
+.btn-interior.btn-secondary:hover {
+  background-color: var(--text); /* naranja salmon */
+  border: none !important;
+  color: #E99079; /* texto oscuro */
+}
+
+
+
+
+/* 🔥 TERCIARY */
+.btn-terciary {
+  border: none;
+}
+
+
+.btn-interior.btn-terciary {
+  background-color: none; /* oscuro */
+  color: var(--text);
+  border: none;
+}
+
+
+.btn-interior.btn-terciary:hover {
+  background-color: grey; /* naranja salmon */
+  border: none !important;
+  color: var(--text); /* texto oscuro */
+}
+
+/* 🔥 ANULAR HOVER CUANDO SE USA SHUFFLE */
+.btn.no-hover .btn-interior:hover {
+  background-color: inherit !important;
+  color: inherit !important;
+  border-color: inherit !important;
+}
+
+.btn.no-hover:hover {
+  border-color: inherit !important;
+}
+
+.shuffle-button-text {
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+  font-family: 'Bitcount', inherit !important;
+  letter-spacing: inherit !important;
+  color: inherit !important;
+  text-transform: inherit !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.shuffle-button-text * {
+  font-family: 'Bitcount', inherit !important;
+  letter-spacing: inherit !important;
+  color: inherit !important;
+  text-transform: inherit !important;
+}

@@ -20,6 +20,17 @@
     src: url('./fonts/Yaldevi-Regular.ttf');
 }
 
+@font-face {
+    font-family: Bitcount;
+    src: url('./fonts/Bitcount-regular.ttf');
+}
+
+
+@font-face {
+    font-family: Khula;
+    src: url('./fonts/Khula-Light.ttf');
+}
+
 
 body{
     font-family: Yaldevi;

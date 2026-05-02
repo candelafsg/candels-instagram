@@ -1,0 +1,29 @@
+.equalizer {
+  display: flex;
+  gap: 4px;
+  align-items: flex-end;
+  height: 60px;
+  
+}
+
+.equalizer span {
+  width: 35px;
+  border-radius: 2px 2px 0 0;
+  height: 10px;
+  background: var(--text);
+}
+
+.equalizer.animating span {
+  animation: bounce 1.3s infinite ease-in-out;
+}
+
+/* delay para efecto natural - solo cuando está animando */
+.equalizer.animating span:nth-child(2) { animation-delay: 0.1s; }
+.equalizer.animating span:nth-child(3) { animation-delay: 0.2s; }
+.equalizer.animating span:nth-child(4) { animation-delay: 0.1s; }
+.equalizer.animating span:nth-child(5) { animation-delay: 0.3s; }
+
+@keyframes bounce {
+  0%, 100% { height: 10px; }
+  50% { height: 70px; }
+}

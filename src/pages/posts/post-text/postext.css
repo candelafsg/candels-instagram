@@ -1,0 +1,111 @@
+.post-text{
+    display: flex;
+    flex-direction: column;
+  
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+
+.txt{
+    font-size: 3rem;
+    font-family: Khula;
+    line-height: 1;
+
+   width: 100%;
+
+  
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    position: relative;
+    width: 50%;
+    gap: 0.4rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    margin-left: 15rem;
+}
+
+
+
+.text-two{
+    width: 70%;
+    text-align: end;
+}
+.text-five{
+    text-align: end;
+    margin-right: 19rem;
+
+}
+
+.text-six{
+    margin-left: 10rem;
+}
+
+
+
+.text-seven{
+    text-align: end;
+}
+
+.text-eight{
+   position: absolute;
+   bottom: 37.7%;
+   left: 40%;
+}
+
+.text-nine{
+   position: absolute;
+   bottom: 35.5%;
+   left: 25%;
+}
+
+
+.footer{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: last baseline;
+    padding-bottom: 3rem;
+}
+
+
+
+.artist{
+    
+    width: 60%;
+}
+
+.text-eleven,.text-twelve{
+    text-align: end;
+}
+
+
+
+
+.text-eleven{
+    margin-right: 12rem;
+    width: auto;
+}
+
+
+.text-twelve{
+    margin-right: 2rem;
+    width: auto;
+
+}

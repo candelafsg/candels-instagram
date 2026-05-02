@@ -1,0 +1,15 @@
+.animated-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.logo-element {
+    opacity: 0;
+    transition: opacity 0s; /* Sin transición, aparición instantánea */
+}
+
+.logo-element.visible {
+    opacity: 1;
+}
